@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Viet Vu Information Form</h1>
+
+    <form action="/" method="post">
+        <div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+        <div>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </div>
+
+        <div>
+            <label for="membership">Membership Level:</label><br>
+            <input list="Options" id="membership" name="membership">
+            <datalist id="Options">
+                <option value="Thành viên Bạc">
+                <option value="Thành viên Vàng">
+                <option value="Thành viên Kim Cương">
+            </datalist><br><br>
+        </div>
+
+        <div>
+            <label for="favcolor">Choose your favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+        </div>
+
+        <div>
+            <input type="checkbox" id="correct" name="correct" value="correct">
+            <label for="correct">Correct</label><br><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
