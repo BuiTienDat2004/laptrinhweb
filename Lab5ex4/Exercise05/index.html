@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input { padding: 8px; width: 200px; }
+    button { padding: 8px; margin-left: 5px; }
+    #weatherInfo { margin-top: 20px; }
+    img { vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <h1>Weather Checker</h1>
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button onclick="getWeather()">Check Weather</button>
+
+  <div id="weatherInfo"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

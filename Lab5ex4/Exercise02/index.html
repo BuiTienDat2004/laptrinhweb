@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slideshow</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin: 20px; }
+    img { width: 300px; height: 200px; object-fit: cover; display: block; margin: auto; }
+    button { margin: 10px; padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Image Slideshow</h1>
+  <img id="slideshow" src="image1.jpg" alt="Slideshow Image" />
+  <div>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

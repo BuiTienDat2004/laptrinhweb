@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .question { font-weight: bold; margin-bottom: 10px; }
+    .option { margin-bottom: 5px; }
+    #result { margin-top: 20px; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>Simple Quiz</h1>
+  <div id="quizBox">
+    <div class="question" id="questionText"></div>
+    <div id="optionsContainer"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
