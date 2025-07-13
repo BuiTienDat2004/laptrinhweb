@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Poll</title>
+</head>
+<body>
+    <h1>Do you prefer Cats or Dogs?</h1>
+
+    <form method="POST">
+        <input type="radio" name="option" value="Cats" required> Cats<br>
+        <input type="radio" name="option" value="Dogs"> Dogs<br><br>
+        <button type="submit">Vote</button>
+    </form>
+
+    <h2>Results:</h2>
+    <ul>
+        {% for option, count in votes.items() %}
+            <li>{{ option }}: {{ count }} vote(s) — {{ percentages[option] }}%</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

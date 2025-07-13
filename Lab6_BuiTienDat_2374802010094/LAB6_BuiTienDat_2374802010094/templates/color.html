@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+    <h1>Change Background Color</h1>
+    <form method="POST">
+        <input type="text" name="color" placeholder="e.g., red or #00ff00" required>
+        <button type="submit">Apply</button>
+    </form>
+
+    <p>Current color: <strong>{{ color }}</strong></p>
+</body>
+</html>
